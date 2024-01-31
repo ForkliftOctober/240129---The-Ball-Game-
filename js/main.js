@@ -1,7 +1,7 @@
 'use strict'
 
 function onBallClick(elBall) {
-	const diff = 50
+	const diff = getRandomInt(20, 60)
 
 	if (elBall.innerText >= 400) {
 		elBall.innerText = 100 - diff
