@@ -12,3 +12,11 @@ body {
 	color: rgb(255, 255, 255);
 	text-align: center;
 }
+
+.ball {
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+	margin: auto;
+	background-color: red;
+}
