@@ -1,11 +1,7 @@
 'use strict'
 
-function onBallClick(elBall) {
+function onBallClick(elBall, maxDiam) {
 	const diff = getRandomInt(20, 60)
-
-	if (elBall.innerText >= 400) {
-		elBall.innerText = 100 - diff
-	}
 
 	elBall.innerText = parseInt(elBall.innerText) + diff
 
@@ -16,4 +12,10 @@ function onBallClick(elBall) {
 	elBall.style.width = newSize
 
 	elBall.style.backgroundColor = getRandomColor()
+
+	if (elBall.innerText >= maxDiam) {
+		elBall.innerText = 100
+		elBall.style.height = 100 + 'px'
+		elBall.style.width = 100 + 'px'
+	}
 }
